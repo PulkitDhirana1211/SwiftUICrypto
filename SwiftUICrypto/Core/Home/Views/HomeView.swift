@@ -100,7 +100,7 @@ extension HomeView {
     private var portfoiloCoinsList: some View {
         List {
             ForEach(vm.portfolioCoins) { coin in
-                CoinRowView(coin: coin, showHoldingsValue: false)
+                CoinRowView(coin: coin, showHoldingsValue: true)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
             }
         }
@@ -117,6 +117,15 @@ extension HomeView {
 
             Text("Price")
                 .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
+            Button {
+                withAnimation(.linear(duration: 2.0)) {
+                    vm.reloadData()
+                }
+            } label: {
+                Image(systemName: "goforward")
+            }
+            .rotationEffect(Angle(degrees: vm.isLoading ? 360 : 0), anchor: .center)
+
         }
         .font(.caption)
         .foregroundStyle(Color.theme.secondaryText)

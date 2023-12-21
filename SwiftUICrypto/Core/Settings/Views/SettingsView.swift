@@ -106,7 +106,7 @@ extension SettingsView {
             
             Link("Visit Website 🥳", destination: personalURL)
         } header: {
-            Text("Coin Gecko Thinking")
+            Text("Developer")
         }
     }
     

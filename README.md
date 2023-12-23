@@ -5,7 +5,7 @@ A crypto tracker app used to track the prices of crypto currencies in the market
 ## Features
 - Live Prices of Currencies
 - Filter Option
-- Sort Currencies using either by ranking or by prices
+- Sort currencies using either by ranking or by prices
 - Add currency to your portfolio
 - Market Data (Graph Representation)
 

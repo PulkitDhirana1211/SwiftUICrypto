@@ -60,6 +60,9 @@ struct DetailView: View {
                 .padding()
             }
         }
+        .background(
+            Color.theme.background
+        )
         .navigationTitle(vm.coin.name)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {

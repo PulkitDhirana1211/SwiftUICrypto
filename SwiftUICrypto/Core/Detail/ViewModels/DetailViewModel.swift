@@ -91,7 +91,7 @@ class DetailViewModel: ObservableObject {
         let marketCapPercentChange = coinModel.marketCapChangePercentage24H
         let marketCapChangeStat = StatisticModel(title: "24h Market Cap Change", value: marketCapChange, percentageChange: marketCapPercentChange)
         
-        let blockTime = coinDetailModel?.blockTimeInMinutes
+        let blockTime = coinDetailModel?.blockTimeInMinutes ?? 0
         let blockTimeString = blockTime == 0 ? "n/a" : "\(blockTime)"
         let blockStat = StatisticModel(title: "Block Time", value: blockTimeString)
         

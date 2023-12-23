@@ -8,6 +8,7 @@ A crypto tracker app used to track the prices of crypto currencies in the market
 - Sort currencies using either by ranking or by prices
 - Add currency to your portfolio
 - Market Data (Graph Representation)
+- Core Data
 
 ## App Screenshots
 ![Simulator Screenshot](https://github.com/PulkitDhirana1211/SwiftUICrypto/assets/54793200/2f62e81d-dede-4e8a-8b3c-8d423b4f611b)
